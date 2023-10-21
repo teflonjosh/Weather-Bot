@@ -2,7 +2,7 @@
 # 
 echo "Hi! What's your name?" 
     read name
-echo "Hello! $name I'm a program that displays data on your terminal :)"
+echo "Hello! $name I'm a program that displays weather data on your terminal :)"
     echo -e "Would you like to check the weather somewhere? (yes/no)"
         read answer
 # main WHILE loop from YES $answer =>
@@ -11,7 +11,7 @@ echo "Hello! $name I'm a program that displays data on your terminal :)"
     if [[ $answer == "yes" ]]; then
         echo "Great! For what city would you like? (please enter city)"
             read target
-                weather=$(curl http://wttr.in/$target)
+                weather=$(curl http://v2.wttr.in/$target)
             echo -e " $weather"
         echo -e
 # Second {internal} IF input =>
