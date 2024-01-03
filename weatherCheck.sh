@@ -37,8 +37,8 @@ done
 #
 echo -e
 # TIMER SCRIPT to count and display => 
-    let "minutes=SECONDS/60"
-        let "seconds=SECONDS"
+    minutes=$((SECONDS / 60))
+        seconds=$((SECONDS % 60))
     echo "We checked the weather for $minutes minutes and $seconds seconds today!"
 #
 # EOP #
