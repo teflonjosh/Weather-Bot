@@ -1,12 +1,12 @@
 #!/bin/bash
 # 
-# Declare Time Variable at 0 onLoad
+# Declare Time Variable at 0 OnLoad
 SECONDS=0
 #
 echo "Hi! What's your name?" 
     read name
-#
-echo "Hello! $name I'm a program that displays weather data on your terminal :)"
+#   
+echo "Hello $name! I'm a BASH program that displays weather data on your terminal :)"
     echo -e "Would you like to check the weather somewhere? (yes/no)"
         read answer
 # main WHILE loop from YES $answer =>
